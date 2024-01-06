@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:repeating_command_block"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "item.warb.menu.main.modifiers",
+            "fallback": "Match Modifiers",
+            "color": "yellow",
+            "italic": false
+          }
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{startSelection:\"main/modifiers\"}"
+    }
+  ]
+}
+
+

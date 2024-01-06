@@ -1,0 +1,130 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_banner",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "warb.selectTeam": {
+                    "min": 1,
+                    "max": 4
+                  }
+                }
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_banner_pattern",
+              "patterns": [
+                {
+                  "pattern": "minecraft:stripe_right",
+                  "color": "red"
+                },
+                {
+                  "pattern": "minecraft:half_horizontal_bottom",
+                  "color": "white"
+                },
+                {
+                  "pattern": "minecraft:stripe_top",
+                  "color": "red"
+                },
+                {
+                  "pattern": "minecraft:stripe_middle",
+                  "color": "red"
+                },
+                {
+                  "pattern": "minecraft:square_bottom_left",
+                  "color": "red"
+                },
+                {
+                  "pattern": "minecraft:border",
+                  "color": "white"
+                }
+              ],
+              "append": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_banner",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "warb.selectTeam": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blue_banner",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "warb.selectTeam": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_banner",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "warb.selectTeam": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_banner",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "warb.selectTeam": 4
+              }
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "item.warb.menu.teams",
+            "fallback": "Team Selection",
+            "color": "yellow",
+            "italic": false
+          }
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{startSelection:\"main/teams\"}"
+    }
+  ]
+}
+

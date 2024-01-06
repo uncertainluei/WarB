@@ -1,0 +1,3 @@
+execute unless score ts warb.level matches 10.. run bossbar set warb:game_timer name [{"selector":"@s"},{"text":" - ","color":"gray","bold":true},{"score":{"name":"tm","objective":"warb.level"},"color":"gold"},{"text":":","color":"red"},{"text":"0","color":"gold"},{"score":{"name":"ts","objective":"warb.level"},"color":"gold"}]
+execute if score ts warb.level matches 10.. run bossbar set warb:game_timer name [{"selector":"@s"},{"text":" - ","color":"gray","bold":true},{"score":{"name":"tm","objective":"warb.level"},"color":"gold"},{"text":":","color":"red"},{"score":{"name":"ts","objective":"warb.level"},"color":"gold"}]
+

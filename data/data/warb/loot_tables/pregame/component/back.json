@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrier"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "item.warb.menu.back",
+            "fallback": "Go Back",
+            "color": "red",
+            "italic": false
+          }
+        }
+      ]
+    }
+  ]
+}
+

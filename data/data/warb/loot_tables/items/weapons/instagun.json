@@ -1,0 +1,35 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:4,Unbreakable:1b,CustomModelData:9001,weaponType:\"instagun\"}"
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "translate": "item.warb.instagun",
+                  "fallback": "Instagun",
+                  "color": "light_purple",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

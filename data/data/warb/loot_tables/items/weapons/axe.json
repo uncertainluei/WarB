@@ -1,0 +1,70 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:golden_axe",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:6,Unbreakable:1b,weaponType:\"axe\",AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:6,Operation:0,UUID:[I;1117905040,347491730,-1807127709,-1248670613],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-3.1,Operation:0,UUID:[I;-908420225,2035695981,-1298232983,590408501],Slot:\"mainhand\"}]}"
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+				"",
+                {
+                  "translate": "item.modifiers.mainhand",
+                  "fallback": "When in main hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": " ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "attribute.modifier.equals.0",
+                    "fallback": "7 Attack Damage",
+                    "with": [
+                      "7",
+                      {
+						"translate": "attribute.name.generic.attack_damage"
+					  }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "text": " ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "attribute.modifier.equals.0",
+                    "fallback": "0.9 Attack Speed",
+                    "with": [
+                      "0.9",
+                      {
+						"translate": "attribute.name.generic.attack_speed"
+					  }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

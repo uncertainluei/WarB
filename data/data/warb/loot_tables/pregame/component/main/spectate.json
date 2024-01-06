@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "item.warb.menu.main.spectate",
+            "fallback": "Spectate Game",
+            "color": "gray",
+            "italic": false
+          }
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{startSelection:\"main/spectate\"}"
+    }
+  ]
+}
+
+

@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "warb:pregame/component/main/modifiers"
+        }
+      ]
+    },
+	{
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "warb:pregame/component/main/spectate"
+        }
+      ]
+    },
+	{
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "warb:pregame/component/main/ready"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+	"pack":
+	{
+		"pack_format": 26,
+		"supported_formats": {"min_inclusive": 26, "max_inclusive": 27},
+		"description": "§6War§c§lB §8(Dev, MC 1.20.4)\n§7Silly lil' arena shooter fun!"
+	}
+}

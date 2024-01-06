@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "weight": 1,
+          "name": "warb:pregame/component/main/teams"
+        }
+      ]
+    }
+  ]
+}

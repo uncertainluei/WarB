@@ -1,0 +1,183 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_banner"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": {
+            "translate": "item.warb.menu.teams.red",
+            "fallback": "Red",
+            "color": "red",
+            "italic": false
+          }
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{HideFlags:7,startSelection:\"teams/red\"}"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blue_banner"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": {
+            "translate": "item.warb.menu.teams.blue",
+            "fallback": "Blue",
+            "color": "blue",
+            "italic": false
+          }
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{HideFlags:7,startSelection:\"teams/blue\"}"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_banner"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": {
+            "translate": "item.warb.menu.teams.green",
+            "fallback": "Green",
+            "color": "green",
+            "italic": false
+          }
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{HideFlags:7,startSelection:\"teams/green\"}"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "warb.teamCount": {
+              "min": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_banner"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": {
+            "translate": "item.warb.menu.teams.yellow",
+            "fallback": "Yellow",
+            "color": "yellow",
+            "italic": false
+          }
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{HideFlags:7,startSelection:\"teams/yellow\"}"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "warb.teamCount": {
+              "min": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_banner"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": {
+            "translate": "item.warb.menu.random",
+            "fallback": "Random Selection",
+            "color": "light_purple",
+            "italic": false
+          }
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{HideFlags:7,startSelection:\"teams/random\"}"
+        },
+        {
+          "function": "minecraft:set_banner_pattern",
+          "patterns": [
+            {
+              "pattern": "minecraft:stripe_right",
+              "color": "red"
+            },
+            {
+              "pattern": "minecraft:half_horizontal_bottom",
+              "color": "white"
+            },
+            {
+              "pattern": "minecraft:stripe_top",
+              "color": "red"
+            },
+            {
+              "pattern": "minecraft:stripe_middle",
+              "color": "red"
+            },
+            {
+              "pattern": "minecraft:square_bottom_left",
+              "color": "red"
+            },
+            {
+              "pattern": "minecraft:border",
+              "color": "white"
+            }
+          ],
+          "append": false
+        }
+      ]
+    }
+  ]
+}
+
