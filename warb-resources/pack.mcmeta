@@ -1,8 +1,0 @@
-{
-	"pack":
-	{
-		"pack_format": 22,
-		"supported_formats": {"min_inclusive": 22, "max_inclusive": 23},
-		"description": "§6War§c§lB §8(Dev, MC 1.20.4)\n§7Essential game resources"
-	}
-}

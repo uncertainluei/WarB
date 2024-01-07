@@ -1,0 +1,20 @@
+{
+    "item.warb.instagun": "Arma-Insta",
+    "item.warb.flamethrower": "Lança-Chamas",
+    "item.warb.rocket_launcher": "Lança-Foguetes",
+
+    "item.warb.menu.back": "Go Back",
+    "item.warb.menu.random": "Seleção Aleatória",
+
+    "item.warb.menu.main.teams": "Seleção de Equipas",
+    "item.warb.menu.main.modifiers": "Modificadores de Jogo",
+    "item.warb.menu.main.spectate": "Tornar num Espectador",
+
+    "item.warb.menu.main.ready": "Preparado!",
+    "item.warb.menu.main.ready_undo": "Talvez não...",
+
+    "item.warb.menu.teams.red": "Vermelho",
+    "item.warb.menu.teams.blue": "Azul",
+    "item.warb.menu.teams.green": "Verde",
+    "item.warb.menu.teams.yellow": "Amarelo"
+}
